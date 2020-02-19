@@ -51,7 +51,11 @@ table {
 
 //fonts
 
-
+@main-color:#242582;
+@accent1:#553D67;
+@accent2:#F64C72;
+@accent3:rgb(91, 218, 235);
+@accent4:#EDF5E1;
 
 /* Set every element's box-sizing to border-box */
 * {
@@ -59,11 +63,108 @@ table {
 	font-size: 5rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5
+{
 	font-size: 5rem;
+}
 
 html, body {
 	font-size: 62.5%;
     height: 100%;
 }
 
+//code here
+li{
+	font-size: 2rem;
+}
+header{
+
+	width: 100%;
+	
+	padding: 5% 0;
+	background-color: @main-color;
+	flex-direction: column;
+	nav{
+		display: flex;
+	justify-content: space-evenly;
+	}
+	a{
+		font-size: 3rem;
+		color: @accent2;
+		text-decoration: none;
+		
+	}
+
+	@media( max-width: 500px;)
+}
+
+body{
+	background-color: @accent3;
+}
+.top1{
+	width: 100%;
+	background-color: @accent3;
+
+	h1{
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		color: @accent2;
+	}
+	@media( max-width: 500px ) {
+
+		flex-direction: column;
+}
+}
+
+.intro1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	.top2{
+		color: @accent4;
+	}
+	.skills{
+		display: flex;
+		flex-direction: column;
+		color: @accent4;
+	}
+	h2{
+		margin: 5%;
+	}
+
+}
+}
+.workhistory{
+	width: 100%;
+	color: @accent2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	h4,h3{
+		font-size: 3rem;
+	}
+}
+
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10%;
+	justify-content: space-evenly;
+	height: 20%;
+	color: @accent2;
+	background-color: @main-color;
+
+	h2{
+		font-size: 3rem;
+	}
+
+	li{
+		display: flex;
+		justify-content: space-evenly;
+	}
+}
