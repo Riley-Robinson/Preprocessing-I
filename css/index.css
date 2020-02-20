@@ -152,6 +152,11 @@ header {
   background-color: #242582;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  header {
+    background-color: red;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-evenly;
@@ -194,11 +199,6 @@ body {
 }
 .intro1 h2 {
   margin: 5%;
-}
-@media (max-width: 500px) {
-  .intro1 {
-    flex-direction: column;
-  }
 }
 .workhistory {
   width: 100%;
