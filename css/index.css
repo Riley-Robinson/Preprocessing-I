@@ -118,7 +118,7 @@ table {
 .main-container {
   font-size: 62.5%;
   margin: 0 auto;
-  background-color: #5bdaeb;
+  background-color: #3ab3c3;
 }
 .main-container h1 {
   font-size: 5rem;
@@ -185,7 +185,7 @@ table {
 }
 .main-container .top1 {
   width: 100%;
-  background-color: #5bdaeb;
+  background-color: #3ab3c3;
 }
 .main-container .top1 h1 {
   display: flex;
@@ -211,6 +211,11 @@ table {
   flex-direction: column;
   color: #EDF5E1;
 }
+@media (max-width: 500px) {
+  .main-container .intro1 .skills li {
+    border-bottom: 1px solid #F64C72;
+  }
+}
 .main-container .intro1 h2 {
   margin: 5%;
 }
@@ -222,6 +227,11 @@ table {
   align-items: center;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .main-container .workhistory {
+    margin: 5% 0;
+  }
+}
 .main-container .workhistory h4,
 .main-container .workhistory h3 {
   font-size: 3rem;
@@ -230,6 +240,13 @@ table {
   .main-container .workhistory h4,
   .main-container .workhistory h3 {
     font-size: 1rem;
+    border-bottom: 1px solid #EDF5E1;
+  }
+}
+@media (max-width: 500px) {
+  .main-container .workhistory li {
+    margin: 2% 0;
+    border-bottom: 1px solid #EDF5E1;
   }
 }
 .main-container .contact {
@@ -243,6 +260,7 @@ table {
 }
 .main-container .contact h2 {
   font-size: 3rem;
+  margin: 5% 0;
 }
 @media (max-width: 500px) {
   .main-container .contact h2 {
@@ -252,9 +270,11 @@ table {
 .main-container .contact li {
   display: flex;
   justify-content: space-evenly;
+  margin: 4% 0;
 }
 @media (max-width: 500px) {
   .main-container .contact li {
     font-size: 1rem;
+    border-bottom: 1px solid #EDF5E1;
   }
 }
