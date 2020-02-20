@@ -90,20 +90,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
 body {
   line-height: 1;
 }
@@ -126,81 +112,109 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-  font-size: 5rem;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-size: 5rem;
-}
-html,
-body {
+.main-container {
   font-size: 62.5%;
-  height: 100%;
+  margin: 0 auto;
+  background-color: #5bdaeb;
 }
-li {
+.main-container h1 {
+  font-size: 5rem;
+}
+.main-container h2 {
+  font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .main-container h2 {
+    font-size: 1.5rem;
+  }
+}
+.main-container li {
   font-size: 2rem;
 }
-header {
+@media (max-width: 500px) {
+  .main-container li {
+    font-size: 1rem;
+  }
+}
+.main-container header {
   width: 100%;
   padding: 5% 0;
   background-color: #242582;
-  flex-direction: column;
+}
+.main-container header nav {
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.55rem;
+  margin: 0px 20px 20px 20px;
+  align-items: center;
 }
 @media (max-width: 500px) {
-  header {
-    background-color: red;
+  .main-container header nav {
+    flex-direction: column;
+    border: 2px solid #EDF5E1;
+    border-radius: 10px;
+    padding: 2%;
   }
 }
-header nav {
-  display: flex;
-  justify-content: space-evenly;
-}
-header a {
-  font-size: 3rem;
-  color: #F64C72;
+.main-container header nav a {
   text-decoration: none;
+  color: #F64C72;
+  padding: 5px 0px 5px 0px;
+  align-self: center;
 }
-body {
-  background-color: #5bdaeb;
+@media (max-width: 500px) {
+  .main-container header nav a {
+    border-bottom: 1px solid #EDF5E1;
+  }
 }
-.top1 {
+.main-container header nav a:hover {
+  color: white;
+  background-color: #555;
+  padding: 5px 10px 5px 10px;
+}
+.main-container header nav a:first-child {
+  margin-left: 0;
+}
+.main-container header nav a:last-child {
+  margin-right: 0;
+}
+.main-container .top1 {
   width: 100%;
   background-color: #5bdaeb;
 }
-.top1 h1 {
+.main-container .top1 h1 {
   display: flex;
   text-align: center;
   justify-content: center;
   color: #F64C72;
 }
 @media (max-width: 500px) {
-  .top1 {
-    flex-direction: column;
+  .main-container .top1 h1 {
+    font-size: 4rem;
   }
 }
-.intro1 {
+.main-container .intro1 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.intro1 .top2 {
+.main-container .intro1 .top2 {
   color: #EDF5E1;
 }
-.intro1 .skills {
+.main-container .intro1 .skills {
   display: flex;
   flex-direction: column;
   color: #EDF5E1;
 }
-.intro1 h2 {
+.main-container .intro1 h2 {
   margin: 5%;
 }
-.workhistory {
+.main-container .workhistory {
   width: 100%;
   color: #F64C72;
   display: flex;
@@ -208,11 +222,17 @@ body {
   align-items: center;
   text-align: center;
 }
-.workhistory h4,
-.workhistory h3 {
+.main-container .workhistory h4,
+.main-container .workhistory h3 {
   font-size: 3rem;
 }
-.contact {
+@media (max-width: 500px) {
+  .main-container .workhistory h4,
+  .main-container .workhistory h3 {
+    font-size: 1rem;
+  }
+}
+.main-container .contact {
   display: flex;
   flex-direction: column;
   margin-top: 10%;
@@ -221,10 +241,20 @@ body {
   color: #F64C72;
   background-color: #242582;
 }
-.contact h2 {
+.main-container .contact h2 {
   font-size: 3rem;
 }
-.contact li {
+@media (max-width: 500px) {
+  .main-container .contact h2 {
+    font-size: 1rem;
+  }
+}
+.main-container .contact li {
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .main-container .contact li {
+    font-size: 1rem;
+  }
 }
